@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.sidebar > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+.block1 {
+  background: linear-gradient(229.99deg, #085e73, #c94b35);
+}
+.block2 {
+  background: linear-gradient(215.32deg, blue, #9e0706);
+}
+.block3 {
+  background: linear-gradient(221.87deg, #3d080e, #804c26);
+}
+.block4 {
+  background: linear-gradient(220.16deg, silver, #000);
+}
+.sidebar h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+.main-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.main-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.block1_img {
+  background-image: url("https://i.pinimg.com/originals/56/05/2c/56052c2b9e34f52c50e288ad1288dd86.jpg");
+}
+.block2_img {
+  background-image: url("https://images.unsplash.com/photo-1619909490011-5e4b5b6b8547?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=713&q=80");
+}
+.block3_img {
+  background-image: url("https://www.allinallspace.com/wp-content/uploads/2019/08/coding-1841550_1920-min.jpg");
+}
+.block4_img {
+  background-image: url("https://i.pinimg.com/originals/e8/cd/e2/e8cde23e9ee794c7f281a7e9529c74f0.jpg");
+}
+button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+button:hover {
+  color: #222;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container .controls button {
+  position: absolute;
+  left: 35%;
+  top: -50vh; /*problem def_ 50%*/
+  z-index: 100;
+}
+
+.container .controls .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.container .controls .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
