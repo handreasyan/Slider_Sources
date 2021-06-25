@@ -101,7 +101,7 @@ button:focus {
   outline: none;
 }
 
-.container .controls  {
+.controls  {
   position: absolute;
   left: 35%;
   top: 100vh; 
