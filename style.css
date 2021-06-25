@@ -104,7 +104,7 @@ button:focus {
 .controls  {
   position: absolute;
   left: 35%;
-  top: 100vh; 
+  top: 50vh; 
   z-index: 100;
   display:flex;
 }
@@ -119,4 +119,5 @@ button:focus {
   transform: translateY(-100%);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  margin-left:-50%;
 }
